@@ -128,7 +128,7 @@ export default function LocationsSection() {
                                         </div>
 
                                         <div className="shrink-0 mt-auto">
-                                            <button className="bg-[#a292b9] text-white px-6 py-2 rounded-[4px] hover:bg-primary-dark transition-colors text-[11px] font-bold border-none shadow-sm">
+                                            <button className="bg-[#a292b9] text-white px-6 py-2 rounded-[4px] hover:bg-primary-dark transition-colors text-[15px] font-bold border-none shadow-sm">
                                                 Book Appointment
                                             </button>
                                         </div>
