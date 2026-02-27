@@ -11,7 +11,7 @@ import ContactBar from './_components/ContactBar';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans text-gray-900 overflow-x-hidden">
+    <div className="bg-white flex flex-col font-sans text-gray-900">
       <ContactBar />
       <Header />
       <main className="grow">

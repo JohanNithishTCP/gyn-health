@@ -21,7 +21,7 @@ export default function ActionCards() {
                             Get Emergency<br />
                             Medical Service
                         </h3>
-                        <p className="text-white text-[13px] leading-relaxed max-w-[280px]">
+                        <p className="text-white text-[16px] leading-relaxed max-w-[280px]">
                             Select a service and schedule an appointment to have emergency healthcare
                         </p>
                     </div>
@@ -41,7 +41,7 @@ export default function ActionCards() {
 
                     <div className="relative z-20">
                         <h3 className="text-white text-[24px] lg:text-[28px] font-bold mb-3">Sign up today!</h3>
-                        <p className="text-white text-[13px] font-medium mb-8 max-w-[420px]">
+                        <p className="text-white text-[16px] font-medium mb-8 max-w-[420px]">
                             Straight to your inbox! We share tips, news and insights from the world of gynecology.
                         </p>
 
@@ -49,16 +49,16 @@ export default function ActionCards() {
                             <input
                                 type="text"
                                 placeholder="Full Name"
-                                className="w-full h-12 px-5 rounded-[4px] bg-white text-gray-800 text-[14px] outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-primary/50"
+                                className="w-full h-12 px-5 rounded-[4px] bg-white text-gray-800 text-[16px] outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-primary/50"
                             />
                             <input
                                 type="email"
                                 placeholder="Email Address"
-                                className="w-full h-12 px-5 rounded-[4px] bg-white text-gray-800 text-[14px] outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-primary/50 mb-2"
+                                className="w-full h-12 px-5 rounded-[4px] bg-white text-gray-800 text-[16px] outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-primary/50 mb-2"
                             />
                             <button
                                 type="submit"
-                                className="self-start bg-primary text-white px-8 py-3 rounded-[4px] font-bold text-[14px] hover:bg-primary-dark transition-colors border-none shadow-sm"
+                                className="self-start bg-primary text-white px-8 py-3 rounded-[4px] font-bold text-[16px] hover:bg-primary-dark transition-colors border-none shadow-sm"
                             >
                                 Register Now
                             </button>

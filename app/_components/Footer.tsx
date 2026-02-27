@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <footer className="pb-4 text-gray-600">
-            <div className="bg-[#f0faf4] pt-20">
+        <footer className=" text-gray-600">
+            <div className=" pt-15">
                 <div className="site-container">
                     <div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16 px-2 lg:px-4"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-11 px-2 lg:px-4"
                         data-aos="fade-up"
                     >
 
@@ -15,7 +15,7 @@ export default function Footer() {
                             <div className="flex items-center text-primary-light mb-6">
                                 <img src="/logo.png" alt="Logo" width={`215px`} />
                             </div>
-                            <p className="text-[12.5px] font-medium text-gray-600 leading-[1.8] mb-8">
+                            <p className="text-[14px] font-medium text-gray-600 leading-[1.8] mb-8">
                                 GynHealth is a trusted women's healthcare which dedicated to comprehensive, compassionate, and personalized care at every stage of life.
                             </p>
                             <div className="flex gap-3">
@@ -33,7 +33,7 @@ export default function Footer() {
                         {/* Quick Links Column */}
                         <div className="lg:ml-auto">
                             <h4 className="text-[16px] font-bold text-[#86789b] mb-6">Quick Links</h4>
-                            <ul className="flex flex-col gap-4 text-[13px] font-medium text-gray-500">
+                            <ul className="flex flex-col gap-4 text-[14px] font-medium text-gray-500">
                                 <li><a href="#" className="hover:text-primary transition-colors text-primary">Home</a></li>
                                 <li><a href="#" className="hover:text-primary transition-colors">About</a></li>
                                 <li><a href="#" className="hover:text-primary transition-colors">Services</a></li>
@@ -46,7 +46,7 @@ export default function Footer() {
                         {/* Services Column */}
                         <div className="lg:ml-auto mx-auto">
                             <h4 className="text-[16px] font-bold text-[#86789b] mb-6">Services</h4>
-                            <ul className="flex flex-col gap-4 text-[13px] font-medium text-gray-500">
+                            <ul className="flex flex-col gap-4 text-[14px] font-medium text-gray-500">
                                 <li><a href="#" className="hover:text-primary transition-colors text-primary">Gynecology</a></li>
                                 <li><a href="#" className="hover:text-primary transition-colors">Obstetrics</a></li>
                                 <li><a href="#" className="hover:text-primary transition-colors">Infertility</a></li>
@@ -58,7 +58,7 @@ export default function Footer() {
                         {/* Contact Us Column */}
                         <div>
                             <h4 className="text-[16px] font-bold text-[#86789b] mb-6">Contact Us</h4>
-                            <ul className="flex flex-col gap-5 text-[12.5px] font-medium text-gray-500">
+                            <ul className="flex flex-col gap-5 text-[14px] font-medium text-gray-500">
                                 <li className="flex items-start gap-4">
                                     <svg className="w-5 h-5 text-[#86789b] shrink-0 translate-y-[-2px] ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                     <span className="leading-relaxed">gynhealth AG, Höschgasse<br />50, 8008 Zürich</span>
@@ -77,14 +77,17 @@ export default function Footer() {
 
                 </div>
 
-                <div className="border-t border-black/5"></div>
+
             </div>
-            <div className=" site-container px-2 lg:px-4 mt-5 flex flex-col md:flex-row justify-between items-center text-[10.5px] font-bold text-gray-500 gap-4">
-                <p>© Copyright © Invotec International Inc</p>
-                <div className="flex items-center">
-                    <a href="#" className="hover:text-primary transition-colors px-2">Privacy policy</a>
-                    <span className="text-gray-300">|</span>
-                    <a href="#" className="hover:text-primary transition-colors px-2">Imprint</a>
+            <div className="bg-[#f0faf4] pb-4">
+                <div className="border-t border-black/5"></div>
+                <div className=" site-container px-2 lg:px-4 mt-5 flex flex-col md:flex-row justify-between items-center text-[10.5px] font-bold text-gray-500 gap-4">
+                    <p>© Copyright © Invotec International Inc</p>
+                    <div className="flex items-center">
+                        <a href="#" className="hover:text-primary transition-colors px-2">Privacy policy</a>
+                        <span className="text-gray-300">|</span>
+                        <a href="#" className="hover:text-primary transition-colors px-2">Imprint</a>
+                    </div>
                 </div>
             </div>
         </footer>

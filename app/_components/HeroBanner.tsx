@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 
 const bannerVideos = [
-    "https://cdn.clinicalvisuals.com/medical/sleepnet/landingpage/sleepnet_01.webm",
-    "https://cdn.clinicalvisuals.com/medical/sleepnet/landingpage/sleepnet_02.webm",
+    "https://cdn.clinicalvisuals.com/medical/gynhealth/gynecology.webm",
+    "https://cdn.clinicalvisuals.com/medical/gynhealth/obstetrics.webm",
+    "https://cdn.clinicalvisuals.com/medical/gynhealth/infertility.webm",
+    "https://cdn.clinicalvisuals.com/medical/gynhealth/breast_symptoms.webm",
 ];
 
 export default function HeroBanner() {

@@ -37,7 +37,7 @@ export default function AboutSection() {
 
                     <hr className="border-gray-200 mb-6" />
 
-                    <h4 className="text-gray-900 font-bold mb-5 text-[14px]">Our Commitment to You</h4>
+                    <h4 className="text-gray-900 font-bold mb-5 text-[26px]">Our Commitment to You</h4>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 mb-8">
                         {commitments.map((item, idx) => (
@@ -52,7 +52,7 @@ export default function AboutSection() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <span className="text-gray-600 text-[14px]">{item}</span>
+                                <span className="text-gray-600 text-[16px]">{item}</span>
                             </div>
                         ))}
                     </div>

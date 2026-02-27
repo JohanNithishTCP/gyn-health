@@ -42,18 +42,18 @@ export default function ExperienceSection() {
                         className="flex items-center gap-6 pt-6 -mx-1"
                         data-aos="fade-up"
                     >
-                        <p className="text-gray-500 text-[14px] leading-[1.6] flex-1 font-medium ">
+                        <p className="text-gray-500 text-[16px] leading-[1.6] flex-1 font-medium ">
                             Get in touch with us for personalized support
                             and expert advice on your fertility journey and
                             family planning decisions.
                         </p>
-                        <div className="flex items-center gap-3 min-w-[170px]">
+                        <div className="flex items-center gap-3 min-w-[180px]">
                             <div className="w-12 h-12 rounded-full bg-[#a292b9] flex items-center justify-center text-white shrink-0 shadow-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-gray-500 text-[10px] mb-0.5">Get in touch</span>
-                                <a href="tel:+1800001658" className="text-gray-900 font-bold text-[14px] hover:text-primary transition-colors tracking-tight">+1800-001-658</a>
+                                <span className="text-gray-500 text-[14px] mb-0.5">Get in touch</span>
+                                <a href="tel:+1800001658" className="text-gray-900 font-bold text-[17px] hover:text-primary transition-colors tracking-tight">+1800-001-658</a>
                             </div>
                         </div>
                     </div>

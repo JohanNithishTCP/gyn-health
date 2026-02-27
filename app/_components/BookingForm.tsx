@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function BookingForm() {
     return (
-        <div className="site-container max-w-4xl px-4 lg:px-0">
+        <div className="site-container lg:max-w-6xl! px-4 lg:px-0">
             <div
                 className="text-center mb-8"
                 data-aos="fade-up"
@@ -16,7 +16,7 @@ export default function BookingForm() {
                 data-aos-delay="200"
             >
                 {/* Tab */}
-                <div className="bg-brand-green/90 inline-block px-6 py-2.5 w-full rounded-t-lg font-bold text-gray-800 text-[13px] relative z-10 border border-brand-green-dark translate-y-px">
+                <div className="bg-brand-green/90 inline-block px-6 py-2.5 w-full rounded-t-lg font-bold text-gray-800 text-[16px] relative z-10 border border-brand-green-dark translate-y-px">
                     Book Appointment
                 </div>
 
@@ -48,7 +48,7 @@ export default function BookingForm() {
                         data-aos="fade-up"
                         data-aos-delay="650"
                     >
-                        <button className="bg-primary hover:bg-primary-dark text-white px-10 py-2.5 rounded-md font-bold shadow hover:-translate-y-0.5 transition-all duration-300 text-[13px] tracking-wide relative top-2">
+                        <button className="bg-primary hover:bg-primary-dark text-white px-10 py-2.5 rounded-md font-bold shadow hover:-translate-y-0.5 transition-all duration-300 text-[16px] tracking-wide relative top-2">
                             Book Now!
                         </button>
                     </div>

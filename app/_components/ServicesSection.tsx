@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
@@ -10,22 +10,22 @@ import 'swiper/css/navigation';
 const services = [
     {
         title: "Gynecology",
-        video: "https://cdn.clinicalvisuals.com/siteImages/generic/adenomyosis.mp4", // Placeholder video
+        video: "https://cdn.clinicalvisuals.com/medical/gynhealth/gynecology.webm", // Placeholder video
         description: "Holistic care for your reproductive health, featuring check-ups, screenings, and gynecological treatments."
     },
     {
         title: "Obstetrics",
-        video: "https://cdn.clinicalvisuals.com/siteImages/generic/bronchial_foreign_body.mp4", // Placeholder video
+        video: "https://cdn.clinicalvisuals.com/medical/gynhealth/obstetrics.webm", // Placeholder video
         description: "Personalized support throughout your pregnancy journey, from early care to delivery, ensuring the health and well-being of both mother and baby."
     },
     {
         title: "Infertility",
-        video: "https://cdn.clinicalvisuals.com/siteImages/generic/cervical_polyps.mp4", // Placeholder video
+        video: "https://cdn.clinicalvisuals.com/medical/gynhealth/infertility.webm", // Placeholder video
         description: "Expert guidance and tailored treatment options to support your fertility journey and help you make informed decisions about family planning."
     },
     {
         title: "Breast Symptoms",
-        video: "https://cdn.clinicalvisuals.com/siteImages/generic/ectopic_pregnancy.mp4", // Placeholder video
+        video: "https://cdn.clinicalvisuals.com/medical/gynhealth/breast_symptoms.webm", // Placeholder video
         description: "Breast symptoms can differ, including size changes, lumps, or unusual discharge. Look out for swelling or discomfort. If changes persist, consult a healthcare professional."
     }
 ];
@@ -33,32 +33,38 @@ const services = [
 function ServiceCard({ service }: { service: typeof services[0] }) {
     const videoRef = useRef<HTMLVideoElement>(null);
 
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.load();
+        }
+    }, []);
+
     return (
         <div
             className="bg-white rounded-[20px] overflow-hidden aspect-4/5 relative group shadow-sm transition-transform hover:-translate-y-1 h-full cursor-pointer"
-            onMouseEnter={() => videoRef.current?.play()}
+            onMouseEnter={() => videoRef.current?.play().catch(() => { })}
             onMouseLeave={() => {
                 if (videoRef.current) {
                     videoRef.current.pause();
-                    videoRef.current.currentTime = 0;
+                    videoRef.current.currentTime = 0.1;
                 }
             }}
         >
             <video
                 ref={videoRef}
-                src={`${service.video}#t=0.001`}
+                src={`${service.video}#t=0.1`}
                 muted
                 loop
                 playsInline
                 preload="metadata"
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-80 group-hover:opacity-100"
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
             />
             {/* Fallback/Initial Overlay */}
             <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
 
-            <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-[20px] p-6 shadow-xl transform transition-transform duration-500">
+            <div className="absolute bottom-6 left-6 right-6 bg-white/70 backdrop-blur-md rounded-[20px] p-6 shadow-xl transform transition-transform duration-500">
                 <h3 className="font-bold text-gray-900 mb-3 text-[18px]">{service.title}</h3>
-                <p className="text-gray-500 text-[14px] font-medium leading-[1.6]">
+                <p className="text-gray-500 text-[16px] font-medium leading-[1.6]">
                     {service.description}
                 </p>
             </div>
