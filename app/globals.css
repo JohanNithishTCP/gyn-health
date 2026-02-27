@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #9b8ab2;
+  --color-primary-dark: #817094;
+  --color-primary-light: #c2addf;
+  --color-brand-green: #e3f5eb;
+  --color-brand-green-dark: #bdeccd;
+
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .site-container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .site-container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .site-container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .site-container {
+    max-width: 1140px;
+  }
+}
+
+/* XXL screens (≥1400px) */
+@media (min-width: 1400px) {
+  .site-container {
+    max-width: 1380px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .site-container {
+    max-width: 1580px;
+  }
+}
+
+
+@layer utilities {
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold text-gray-800 mb-4;
+  }
+
+  .section-desc {
+    @apply text-gray-600 leading-relaxed mb-6;
+  }
 }
