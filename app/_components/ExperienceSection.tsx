@@ -9,7 +9,7 @@ export default function ExperienceSection() {
                     className="relative z-10 "
                     data-aos="fade-right"
                 >
-                    <h2 className="text-[24px] md:text-[26px] font-bold text-gray-900 mb-6 tracking-tight">Excellence Built on Experience</h2>
+                    <h2 className="text-[28px] md:text-[32px] font-bold text-gray-900 mb-6 tracking-tight">Excellence Built on Experience</h2>
                     <p className="text-gray-500 text-[16px] text-justify leading-[1.8] font-medium mb-6">
                         Our foundation is built on decades of medical expertise, driven by a relentless pursuit of innovation and a steadfast commitment to delivering exceptional care. We take pride in thoughtfully tailoring our services to meet the unique needs of every woman, ensuring that each individual receives the attention and support they deserve. Our goal is to empower women through personalized healthcare solutions that truly make a difference.
                     </p>
@@ -20,21 +20,25 @@ export default function ExperienceSection() {
 
                     <div className="flex gap-4 mb-4">
                         <div
-                            className="bg-[#fcfafc] border border-gray-100 rounded-[14px] p-5 flex-1 flex flex-col items-center justify-center text-center shadow-sm"
+                            className="bg-[#fcfafc] border border-gray-100 rounded-[14px] p-6 flex-1 flex flex-col items-center justify-center text-center shadow-sm"
                             data-aos="zoom-in"
                             data-aos-delay="200"
                         >
-                            <span className="text-gray-900 font-bold text-[12px] mb-4 tracking-tight">Our Partner Laboratory</span>
-                            <img src="/home/medica.png" alt="Medica" className="w-42" />
+                            <h4 className="text-gray-900 font-bold text-[16px] mb-4 tracking-tight">Our Partner Laboratory</h4>
+                            <div className="h-16 flex items-center justify-center">
+                                <img src="/home/medica.png" alt="Medica" className="w-40 h-auto object-contain" />
+                            </div>
                         </div>
 
                         <div
-                            className="bg-[#fcfafc] border border-gray-100 rounded-[14px] p-5 flex-1 flex flex-col items-center justify-center text-center shadow-sm"
+                            className="bg-[#fcfafc] border border-gray-100 rounded-[14px] p-6 flex-1 flex flex-col items-center justify-center text-center shadow-sm"
                             data-aos="zoom-in"
                             data-aos-delay="400"
                         >
-                            <span className="text-gray-900 font-bold text-[12px] mb-4 tracking-tight">Certifications</span>
-                            <img src="/home/fmh.png" alt="FMH" className="w-21" />
+                            <h4 className="text-gray-900 font-bold text-[16px] mb-4 tracking-tight">Certifications</h4>
+                            <div className="h-16 flex items-center justify-center">
+                                <img src="/home/fmh.png" alt="FMH" className="w-20 h-auto object-contain" />
+                            </div>
                         </div>
                     </div>
 
@@ -59,22 +63,8 @@ export default function ExperienceSection() {
                     </div>
                 </div>
 
-                <div
-                    className="relative mt-20 lg:mt-0 lg:h-full flex items-center justify-center lg:justify-end py-6"
-                    data-aos="fade-left"
-                >
-                    {/* The background blob - Responsive positioning */}
-                    <div
-                        className="absolute top-0 bottom-0 -right-8 md:-right-12 lg:top-7 lg:bottom-7 lg:right-[-50%] w-[95%] lg:w-[120%] rounded-l-[30px] md:rounded-l-[40px] lg:rounded-l-[50px] z-0 bg-cover bg-center overflow-hidden"
-                        style={{ backgroundImage: "url('/home/bg.jpg')" }}
-                    >
-                        <div className="absolute inset-0 bg-[#C0E0CD]/70"></div>
-                    </div>
-
-                    {/* The image container - Centered on mobile, slight offset on desktop */}
-                    <div className="relative z-10 w-full max-w-[550px] rounded-xl aspect-4/3 overflow-hidden  lg:translate-x-[-5%] xl:translate-x-[-10%] 2xl:translate-x-[-19%]">
-                        <img src="/home/build.jpg" alt="Experience" className="w-full h-full object-cover" />
-                    </div>
+                <div className="relative z-10 w-full rounded-xl overflow-hidden " data-aos="fade-left">
+                    <img src="/home/build.png" alt="Experience" className="w-full h-full object-cover" />
                 </div>
 
             </div>

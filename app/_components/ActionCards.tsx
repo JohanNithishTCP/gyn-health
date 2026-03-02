@@ -10,7 +10,9 @@ export default function ActionCards() {
                     className="relative rounded-[24px] overflow-hidden bg-gray-900 border border-gray-100 shadow-sm aspect-4/3 md:aspect-auto flex flex-col justify-end p-8 lg:p-10 group"
                     data-aos="fade-right"
                 >
-                    <div className="absolute inset-0 bg-linear-to-t from-primary-dark/80 from-10% to-transparent z-10"></div>
+                    <div className="absolute inset-0 bg-gray-800/10 z-10 mix-blend-multiply"></div>
+                    <div className="absolute inset-0 bg-primary-dark/60 z-11 mix-blend-multiply"></div>
+                    {/* <div className="absolute inset-0 bg-linear-to-t from-primary-dark/80 from-10% to-transparent z-10"></div> */}
                     {/* Simulated Background Image */}
                     <div className="absolute inset-0 bg-gray-300">
                         <img src="/home/contact-1.png" alt="Emergency" className="w-full h-full object-cover" />
@@ -21,7 +23,7 @@ export default function ActionCards() {
                             Get Emergency<br />
                             Medical Service
                         </h3>
-                        <p className="text-white text-[16px] leading-relaxed max-w-[280px]">
+                        <p className="text-white text-[16px] font-medium leading-relaxed max-w-[350px]">
                             Select a service and schedule an appointment to have emergency healthcare
                         </p>
                     </div>
@@ -29,11 +31,11 @@ export default function ActionCards() {
 
                 {/* Sign up Card */}
                 <div
-                    className="relative rounded-[24px] overflow-hidden bg-gray-900 shadow-sm flex flex-col p-8 lg:p-12 border border-gray-100"
+                    className="relative rounded-[24px] overflow-hidden shadow-sm flex flex-col p-8 lg:p-12 border border-gray-100"
                     data-aos="fade-left"
                 >
                     <div className="absolute inset-0 bg-gray-800/10 z-10 mix-blend-multiply"></div>
-                    <div className="absolute inset-0 bg-primary-dark/60 z-10 mix-blend-multiply"></div>
+                    <div className="absolute inset-0 bg-primary-dark/60 z-11 mix-blend-multiply"></div>
                     {/* Simulated Background Image */}
                     <div className="absolute inset-0 bg-gray-300">
                         <img src="/home/contact-2.png" alt="Emergency" className="w-full h-full object-cover" />

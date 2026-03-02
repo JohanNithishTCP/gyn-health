@@ -64,7 +64,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
 
             <div className="absolute bottom-6 left-6 right-6 bg-white/70 backdrop-blur-md rounded-[20px] p-6 shadow-xl transform transition-transform duration-500">
                 <h3 className="font-bold text-gray-900 mb-3 text-[18px]">{service.title}</h3>
-                <p className="text-gray-500 text-[16px] font-medium leading-[1.6]">
+                <p className="text-gray-600 text-[16px] font-medium leading-[1.6]">
                     {service.description}
                 </p>
             </div>
@@ -103,7 +103,6 @@ export default function ServicesSection() {
 
                 <div
                     className="pb-10"
-                    style={{ width: 'calc(100% + (100vw - 100%) / 2)' }}
                     data-aos="fade-up"
                     data-aos-delay="200"
                 >
@@ -114,12 +113,13 @@ export default function ServicesSection() {
                         slidesPerView={1}
                         breakpoints={{
                             640: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3, spaceBetween: 32 }
+                            1024: { slidesPerView: 3, spaceBetween: 32 },
+                            1400: { slidesPerView: 3, spaceBetween: 32 }
                         }}
                         className="w-full pb-8"
                     >
                         {services.map((service, idx) => (
-                            <SwiperSlide key={idx}>
+                            <SwiperSlide key={idx} className="h-auto">
                                 <ServiceCard service={service} />
                             </SwiperSlide>
                         ))}
