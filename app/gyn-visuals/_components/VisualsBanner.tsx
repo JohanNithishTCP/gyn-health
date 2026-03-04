@@ -2,17 +2,22 @@
 import React, { useState } from "react";
 
 const bannerVideos = [
-    "https://cdn.clinicalvisuals.com/siteImages/gynec/gynec_landing_video_02.mp4",
+    "https://cdn.clinicalvisuals.com/siteImages/gynec/gynec_landing_video_01.mp4",
     "https://cdn.clinicalvisuals.com/siteImages/gynec/gynec_landing_video_02.mp4"
 ];
 
 export default function VisualsBanner() {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
+    // Pick a random initial video on mount
+    React.useEffect(() => {
+        const randomIndex = Math.floor(Math.random() * bannerVideos.length);
+        setCurrentVideoIndex(randomIndex);
+    }, []);
+
     const handleVideoEnd = () => {
-        setCurrentVideoIndex(
-            (prevIndex) => (prevIndex + 1) % bannerVideos.length
-        );
+        const nextIndex = Math.floor(Math.random() * bannerVideos.length);
+        setCurrentVideoIndex(nextIndex);
     };
 
     return (

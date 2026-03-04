@@ -21,10 +21,10 @@ export default function VisualsContactBar() {
                     </a>
                 </div>
                 <div className="flex bg-primary-dark self-stretch items-center text-[11px] font-bold uppercase tracking-wider">
-                    <Link href="https://obgyn.clinicalvisuals.com/freetrial" target='_blank' className="flex items-center px-8 h-full hover:bg-black/10 transition-colors border-x border-white/20 bg-primary/30 shine-effect">
+                    <Link href="https://gyn-health.clinicalvisuals.com/freetrial" target='_blank' className="flex items-center px-8 h-full hover:bg-black/10 transition-colors border-x border-white/20 bg-primary/30 shine-effect">
                         Free Trail
                     </Link>
-                    <Link href="https://obgyn.clinicalvisuals.com/login" target='_blank' className="flex items-center px-8 h-full hover:bg-black/10 transition-colors border-r border-white/20 shine-effect">
+                    <Link href="https://gyn-health.clinicalvisuals.com/login" target='_blank' className="flex items-center px-8 h-full hover:bg-black/10 transition-colors border-r border-white/20 shine-effect">
                         Login
                     </Link>
                 </div>
