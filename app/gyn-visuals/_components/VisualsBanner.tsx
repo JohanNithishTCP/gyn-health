@@ -2,13 +2,11 @@
 import React, { useState } from "react";
 
 const bannerVideos = [
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/gynecology.webm",
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/obstetrics.webm",
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/infertility.webm",
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/breast_symptoms.webm",
+    "https://cdn.clinicalvisuals.com/siteImages/gynec/gynec_landing_video_02.mp4",
+    "https://cdn.clinicalvisuals.com/siteImages/gynec/gynec_landing_video_02.mp4"
 ];
 
-export default function HeroBanner() {
+export default function VisualsBanner() {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
     const handleVideoEnd = () => {
@@ -41,8 +39,10 @@ export default function HeroBanner() {
                     <h1
                         className="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight drop-shadow-2xl"
                     >
-                        <span className="text-primary-light">Holistic Women’s Care{" "}</span>
-                        Tailored to Every Life Phase
+                        <span className="text-primary-light">Visualizing Women’s Health{" "}</span>
+                        Supporting Every Phase of Life
+                        {/* <span className="text-primary-light">Empowering Through Clarity, </span> Caring for Every Stage of Life */}
+
                         {/* <span className="text-primary-light">Every Life Phase</span> */}
                     </h1>
 
